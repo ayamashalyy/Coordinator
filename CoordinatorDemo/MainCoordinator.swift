@@ -12,18 +12,20 @@ import UIKit
 class MainCoordinator: Coordinator {
     
     var navigationController: UINavigationController?
-    //var childCoordinators: [Coordinator] = []
+    var childCoordinators: [Coordinator] = []  // Here we put the helpers.
+    
     
     func eventOccurred(with type: Event) {
         switch type {
         case .buttonTapped:
-            var vc: UIViewController & Coordinating = SecondViewController()
-            vc.coordinator = self
-            navigationController?.pushViewController(vc, animated: true)
+            // Instead of navigating to the second screen by itself, it will fetch the helper.
+            let child = SecondCoordinator(navigationController: navigationController)
+            childCoordinators.append(child) // Add the helper to the list.
+            child.start() // Tell the helper to start its task.
+            
         case .goToThirdScreen:
-            var vc: UIViewController & Coordinating = ThirdViewController()
-            vc.coordinator = self
-            navigationController?.pushViewController(vc, animated: true)
+            // It won't handle it here, the helper will take responsibility.
+            break
         }
     }
     
@@ -32,6 +34,4 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController?.setViewControllers([vc], animated: false)
     }
-    
-    
 }

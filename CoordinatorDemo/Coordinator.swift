@@ -15,7 +15,7 @@ enum Event {
 
 protocol Coordinator: AnyObject {
     var navigationController: UINavigationController? { get set }
-    //var childCoordinators: [Coordinator] { get set }
+    var childCoordinators: [Coordinator] { get set }
     
     func eventOccurred(with type: Event)
     func start()

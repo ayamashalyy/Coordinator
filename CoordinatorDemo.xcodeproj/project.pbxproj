@@ -19,6 +19,7 @@
 		E8BF0E6D2DA00C6500FC025C /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8BF0E6B2DA00C6500FC025C /* FirstViewController.xib */; };
 		E8BF0E702DA013B900FC025C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF0E6E2DA013B900FC025C /* ThirdViewController.swift */; };
 		E8BF0E712DA013B900FC025C /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8BF0E6F2DA013B900FC025C /* ThirdViewController.xib */; };
+		E8BF0E732DA02C9B00FC025C /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF0E722DA02C9B00FC025C /* SecondCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E8BF0E6B2DA00C6500FC025C /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		E8BF0E6E2DA013B900FC025C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E8BF0E6F2DA013B900FC025C /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		E8BF0E722DA02C9B00FC025C /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondCoordinator.swift; path = ../../../Documents/SecondCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E8BF0E672DA0092300FC025C /* SecondViewController.xib */,
 				E8BF0E6E2DA013B900FC025C /* ThirdViewController.swift */,
 				E8BF0E6F2DA013B900FC025C /* ThirdViewController.xib */,
+				E8BF0E722DA02C9B00FC025C /* SecondCoordinator.swift */,
 			);
 			path = CoordinatorDemo;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				E8BF0E682DA0092300FC025C /* SecondViewController.swift in Sources */,
 				E8079A4E2D9FF36900FD39D4 /* Coordinator.swift in Sources */,
+				E8BF0E732DA02C9B00FC025C /* SecondCoordinator.swift in Sources */,
 				E8079A3A2D9FF0DA00FD39D4 /* AppDelegate.swift in Sources */,
 				E8BF0E702DA013B900FC025C /* ThirdViewController.swift in Sources */,
 				E8BF0E632DA002E800FC025C /* MainCoordinator.swift in Sources */,
